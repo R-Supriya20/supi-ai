@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+venv/
+myenv/
+python_311/
+node_modules/
