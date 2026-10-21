@@ -1,0 +1,112 @@
+
+/* Global styles for AI Customer Support Agent */
+
+:root {
+  font-family: "Google Sans", "Segoe UI", Arial, sans-serif;
+  color: #202124;
+  background: #f8fafd;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --google-blue: #4285f4;
+  --google-blue-dark: #1a73e8;
+  --google-bg: #f8fafd;
+  --google-border: #dadce0;
+  --google-text: #202124;
+  --google-muted: #5f6368;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--google-bg);
+  color: var(--google-text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+input,
+textarea,
+select {
+  color: var(--google-text);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--google-blue);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: #d3e3fd;
+  color: #174ea6;
+}
+
+/* Clean scrollbar */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c4c7c5 transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #c4c7c5;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Respect accessibility preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
